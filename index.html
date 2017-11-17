@@ -17,7 +17,6 @@
       <a href="https://github.com/LifeBoxApp/LifeBoxPlayer/releases" class="btn">LifeBoxPlayer on GitHub</a>
       <a href="https://play.google.com/store/apps/details?id=com.lifebox.lifeboxapp" class="btn">Google Play</a>
       <a href="https://twitter.com/lifeboxrec" class="btn">Twitter</a>
-      <a href="https://www.facebook.com/lifeboxapp" class="btn">Facebook</a>
     </section>
 
     <section class="main-content">
@@ -29,19 +28,19 @@
 
 <p>Have you ever wished you could remember what was said in a forgotten conversation? Do you need a simple way to record meetings at work, or lectures at school? Would you like to hear yourself snoring at night?</p>
 
-<p><a href="https://github.com/LifeBoxApp/LifeBoxApp">LifeBoxApp</a> is a <a href="https://en.wikipedia.org/wiki/Lifelog">lifelogging</a> and <a href="https://en.wikipedia.org/wiki/Sousveillance">sousveillance</a> app that captures audio 24/7 on your Android device and uploads it to your personal Dropbox account.</p>
+<p><a href="https://github.com/LifeBoxApp/LifeBoxApp">LifeBoxApp</a> is a <a href="https://en.wikipedia.org/wiki/Lifelog">lifelogging</a> and <a href="https://en.wikipedia.org/wiki/Sousveillance">sousveillance</a> app that captures audio 24/7 on your Android device and uploads it to your personal cloud storage account.</p>
 
 <p><a href="https://github.com/LifeBoxApp/LifeBoxPlayer">LifeBoxPlayer</a> is a <a href="https://www.java.com/en/download/">Java</a> application for Mac/Linux/Windows that helps you to decrypt and review your recordings.</p>
 
 <h3>
 <a id="security" class="anchor" href="#security" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Security</h3>
 
-<p>Your recordings are protected with SSL during the upload to Dropbox. You can optionally set a password to encrypt recordings with AES before they are uploaded. Recordings are <i>not</i> encrypted while they exist on your Android device or on your PC, so we recommend enabling Android device encryption, and encrypting your PC hard disk with FileVault (Mac), LUKS (Linux), BitLocker (Windows) or VeraCrypt (Windows without BitLocker).</p>
+<p>Your recordings are protected with SSL during the upload to cloud storage. You can optionally set a password to encrypt recordings with AES before they are uploaded. Recordings are <i>not</i> encrypted while they exist on your Android device or on your PC, so we recommend enabling Android device encryption, and encrypting your PC hard disk with FileVault (Mac), LUKS (Linux), BitLocker (Windows) or VeraCrypt (Windows without BitLocker).</p>
 
 <h3>
 <a id="privacy-policy" class="anchor" href="#privacy-policy" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Privacy Policy</h3>
 
-<p>We do not collect any data other than the anonymous analytics collected by Google Play, GitHub, and Dropbox.</p>
+<p>We do not collect any data other than the anonymous analytics collected by Google Play, GitHub, CloudRail, Dropbox, OneDrive, and Box.</p>
 
 <h3>
 <a id="usage-agreement" class="anchor" href="#usage-agreement" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage Agreement</h3>
@@ -55,26 +54,27 @@
 <a id="status" class="anchor" href="#status" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project Status</h3>
 
 <p>
-LifeBoxApp proposed features
+LifeBoxApp completed features
 <ul>
 <li><i>Record audio 24/7.</i> ✔</li>
-<li><i>Upload recordings to Dropbox.</i> ✔</li>
+<li><i>Upload recordings to Dropbox, OneDrive, or Box.</i> ✔</li>
 <li><i>Set a password to encrypt recordings.</i> ✔</li>
-<li>More upload destinations (Google Drive, Microsoft OneDrive, OwnCloud etc.)</li>
+</ul>
+LifeBoxApp proposed features
+<ul>
+<li>More upload destinations (Google Drive, NextCloud etc.)</li>
 <li>Automatic uploading.</li>
 <li>Discard empty recordings.</li>
-<li>Record other sensor data (location, motion etc.)</li>
-<li>Take a picture every minute.</li>
-<li>24/7 video recording.</li>
 </ul>
 </p>
 <p>
+LifeBoxPlayer completed features
+<ul>
+<li><i>Decrypt downloaded recordings with your password.</i> ✔</li>
+</ul>
 LifeBoxPlayer proposed features
 <ul>
-<li><i>Move recordings from Dropbox to a local folder on your PC.</i> ✔</li>
-<li><i>Decrypt recordings with your password.</i> ✔</li>
 <li>Review recordings on a calendar or timeline.</li>
-<li>Detect empty recordings and hide or delete them.</li>
 <li>Transcribe recordings to text.</li>
 <li>Make your audio history searchable.</li>
 </ul>
@@ -82,6 +82,18 @@ LifeBoxPlayer proposed features
 
 <h3>
 <a id="change-log" class="anchor" href="#change-log" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Change Log</h3>
+
+<p>
+  27 June 2017 - <a href="https://github.com/LifeBoxApp/LifeBoxApp/releases/tag/v0.2.1">LifeBoxApp v0.2.1</a>
+  <ul>
+    <li>Replaced Dropbox API with CloudRail API.</li>
+    <li>Recordings can be uploaded to Dropbox, OneDrive, or Box.</li>
+    <li>Removed WiFi status indicator.</li>
+    <li>Replaced black logo with coloured logo.</li>
+    <li>Enabled display rotation.</li>
+    <li>Cleaned up the main window.</li>
+  </ul>
+</p>
 
 <p>
   15 Sep 2016 - <a href="https://github.com/LifeBoxApp/LifeBoxApp/releases/tag/v0.1.6">LifeBoxApp v0.1.6</a>
